@@ -61,7 +61,7 @@ class Dashboard extends Component {
     e.preventDefault();
 
     const session = {
-      date: Date.now(),
+      date: this.state.date,
       lengt: this.state.lengt
     }
 
@@ -140,7 +140,7 @@ class Dashboard extends Component {
             <div className="form-group">
               <label>Date:</label>
                 {/* <DatePicker selected={this.state.date} onChange={date => setDate(date)}/> */}
-                {/* <input type="date" required value={this.state.date} onChange={this.onChangeDate}/> */}
+                <input type="date" required value={this.state.date} onChange={this.onChangeDate}/>
             </div>
             <div className="form-group">
               <label>Length:</label>
