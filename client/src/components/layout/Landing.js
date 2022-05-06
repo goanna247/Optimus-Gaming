@@ -1,9 +1,11 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import '../../App.css';
 
 class Landing extends Component {
   render() {
     return (
+      <div>
       <div style={{ height: "75vh" }} className="container valign-wrapper">
         <div className="row">
           <div className="col s12 center-align">
@@ -36,7 +38,11 @@ class Landing extends Component {
             </div>
           </div>
         </div>
-        <h6 className="HomeDescription">Login/Register to book a VR session at Perth's best VR studio</h6>
+        <br />
+      </div>
+        <div>
+          <h5 className="HomeDescription">Login/Register to book a VR session at Perth's best VR studio</h5>
+        </div>
       </div>
     );
   }

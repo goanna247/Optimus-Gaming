@@ -10,7 +10,14 @@ class Register extends Component {
     super();
     this.state = {
       name: "",
+      lastName: "",
       email: "",
+      phone: 0,
+      streetNumber: 0,
+      streetName: "",
+      suburb: "",
+      postCode: 0,
+      age: 0,
       password: "",
       password2: "",
       errors: {}
@@ -41,7 +48,14 @@ class Register extends Component {
 
     const newUser = {
       name: this.state.name,
+      lastName: this.state.lastName,
       email: this.state.email,
+      phone: this.state.phone,
+      streetNumber: this.state.streetNumber,
+      streetName: this.state.streetName,
+      suburb: this.state.suburb,
+      postCode: this.state.postCode,
+      age: this.state.age,
       password: this.state.password,
       password2: this.state.password2
     };
@@ -80,8 +94,22 @@ class Register extends Component {
                     invalid: errors.name
                   })}
                 />
-                <label htmlFor="name">Name</label>
+                <label htmlFor="name">First Name</label>
                 <span className="red-text">{errors.name}</span>
+              </div>
+              <div className="input-field col s12">
+                <input 
+                  onChange={this.onChange}
+                  value={this.state.lastName}
+                  error={errors.lastName}
+                  id="last name"
+                  type="text"
+                  className={classnames("", {
+                    invalid: errors.lastName
+                  })}
+                  />
+                  <label htmlFor="lastName">Last Name</label>
+                  <span className="red-text">{errors.lastName}</span>
               </div>
               <div className="input-field col s12">
                 <input
@@ -96,6 +124,96 @@ class Register extends Component {
                 />
                 <label htmlFor="email">Email</label>
                 <span className="red-text">{errors.email}</span>
+              </div>
+              <div className="input-field col s12">
+                {/* Phone */}
+                <input
+                  onChange={this.onChange}
+                  value={this.state.phone}
+                  error={errors.phone}
+                  id="phone"
+                  type="phone"
+                  className={classnames("", {
+                    invalid: errors.phone
+                  })}
+                />
+                <label htmlFor="phone">phone</label>
+                <span className="red-text">{errors.phone}</span>
+              </div>
+              <div className="input-field col s12">
+                {/* Street number */}
+                <input
+                  onChange={this.onChange}
+                  value={this.state.streetNumber}
+                  error={errors.streetNumber}
+                  id="streetNumber"
+                  type="streetNumber"
+                  className={classnames("", {
+                    invalid: errors.streetNumber
+                  })}
+                />
+                <label htmlFor="streetNumber">Email</label>
+                <span className="red-text">{errors.streetNumber}</span>
+              </div>
+              <div className="input-field col s12">
+                {/* street name */}
+                <input
+                  onChange={this.onChange}
+                  value={this.state.streetName}
+                  error={errors.streetName}
+                  id="streetName"
+                  type="streetName"
+                  className={classnames("", {
+                    invalid: errors.streetName
+                  })}
+                />
+                <label htmlFor="streetName">streetName</label>
+                <span className="red-text">{errors.streetName}</span>
+              </div>
+              <div className="input-field col s12">
+                {/* suburb */}
+                <input
+                  onChange={this.onChange}
+                  value={this.state.suburb}
+                  error={errors.suburb}
+                  id="suburb"
+                  type="suburb"
+                  className={classnames("", {
+                    invalid: errors.suburb
+                  })}
+                />
+                <label htmlFor="suburb">suburb</label>
+                <span className="red-text">{errors.suburb}</span>
+              </div>
+              <div className="input-field col s12">
+                {/* post code */}
+                <input
+                  onChange={this.onChange}
+                  value={this.state.postCode}
+                  error={errors.postCode}
+                  id="postCode"
+                  type="postCode"
+                  className={classnames("", {
+                    invalid: errors.postCode
+                  })}
+                />
+                <label htmlFor="postCode">postCode</label>
+                <span className="red-text">{errors.postCode}</span>
+              </div>
+              <div className="input-field col s12">
+                {/* age  */}
+                <input
+                  onChange={this.onChange}
+                  value={this.state.age}
+                  error={errors.age}
+                  id="age"
+                  type="age"
+                  className={classnames("", {
+                    invalid: errors.age
+                  })}
+                />
+                <label htmlFor="age">age</label>
+                <span className="red-text">{errors.age}</span>
               </div>
               <div className="input-field col s12">
                 <input

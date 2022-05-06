@@ -31,7 +31,15 @@ router.post("/register", (req, res) => {
     } else {
       const newUser = new User({
         name: req.body.name,
+        lastName: req.body.lastName,
         email: req.body.email,
+        phone: req.body.phone,
+        streetNumber: req.body.streetNumber,
+        streetName: req.body.streetName,
+        suburb: req.body.suburb,
+        postCode: req.body.postCode,
+        totalBookingCosts: req.body.totalBookingCosts,
+        age: req.body.age,
         password: req.body.password
       });
 
