@@ -14,8 +14,9 @@ class Navbar extends Component {
               }}
               className="col s5 brand-logo center black-text"
             >
-              <i className="material-icons">code</i>
+              <i className="material-icons">Grade</i>
               OPTIMUS GAMING
+              <i className="material-icons">Grade</i>
             </Link>
           </div>
         </nav>
