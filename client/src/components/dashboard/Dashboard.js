@@ -61,7 +61,7 @@ class Dashboard extends Component {
     e.preventDefault();
 
     const session = {
-      date: this.state.date,
+      date: Date(this.state.date),
       lengt: this.state.lengt
     }
 
