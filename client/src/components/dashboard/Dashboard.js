@@ -70,7 +70,7 @@ class Dashboard extends Component {
     axios.post("/api/sessions/add", session)
     .then(res => console.log(res.data));
 
-    window.location = '#';
+    window.location.reload(true);
   }
 
   deleteSession(id) {
