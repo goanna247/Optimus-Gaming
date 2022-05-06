@@ -140,7 +140,8 @@ class Dashboard extends Component {
             <div className="form-group">
               <label>Date:</label>
                 {/* <DatePicker selected={this.state.date} onChange={date => setDate(date)}/> */}
-                <input type="date" required value={this.state.date} onChange={this.onChangeDate}/>
+                <input type="date" required onChange={this.onChangeDate}/>
+                {/* <DatePicker selected={this.state.date} onChange={(date) => this.onChangeDate(date)} /> */}
             </div>
             <div className="form-group">
               <label>Length:</label>
