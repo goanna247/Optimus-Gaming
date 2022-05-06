@@ -132,7 +132,7 @@ class Register extends Component {
                   value={this.state.phone}
                   error={errors.phone}
                   id="phone"
-                  type="phone"
+                  type="number"
                   className={classnames("", {
                     invalid: errors.phone
                   })}
@@ -147,12 +147,12 @@ class Register extends Component {
                   value={this.state.streetNumber}
                   error={errors.streetNumber}
                   id="streetNumber"
-                  type="streetNumber"
+                  type="number"
                   className={classnames("", {
                     invalid: errors.streetNumber
                   })}
                 />
-                <label htmlFor="streetNumber">Email</label>
+                <label htmlFor="streetNumber">Street Number</label>
                 <span className="red-text">{errors.streetNumber}</span>
               </div>
               <div className="input-field col s12">
@@ -162,7 +162,7 @@ class Register extends Component {
                   value={this.state.streetName}
                   error={errors.streetName}
                   id="streetName"
-                  type="streetName"
+                  type="text"
                   className={classnames("", {
                     invalid: errors.streetName
                   })}
@@ -177,7 +177,7 @@ class Register extends Component {
                   value={this.state.suburb}
                   error={errors.suburb}
                   id="suburb"
-                  type="suburb"
+                  type="text"
                   className={classnames("", {
                     invalid: errors.suburb
                   })}
@@ -192,7 +192,7 @@ class Register extends Component {
                   value={this.state.postCode}
                   error={errors.postCode}
                   id="postCode"
-                  type="postCode"
+                  type="number"
                   className={classnames("", {
                     invalid: errors.postCode
                   })}
@@ -207,7 +207,7 @@ class Register extends Component {
                   value={this.state.age}
                   error={errors.age}
                   id="age"
-                  type="age"
+                  type="number"
                   className={classnames("", {
                     invalid: errors.age
                   })}

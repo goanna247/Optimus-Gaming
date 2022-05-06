@@ -54,7 +54,7 @@ module.exports = function validateRegisterInput(data) {
   }
 
   if (Validator.isEmpty(data.age)) {
-    errors.postCode = "age is required";
+    errors.age = "age is required";
   }
 
   // Password checks
