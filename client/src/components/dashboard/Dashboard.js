@@ -36,7 +36,7 @@ class Dashboard extends Component {
   }
 
   componentDidMount() {
-    axios.get('http://localhost:5000/api/sessions')
+    axios.get('/api/sessions/')
     .then(response => {
       this.setState({ sessions: response.data })
     })
@@ -67,14 +67,14 @@ class Dashboard extends Component {
 
     console.log(session);
 
-    axios.post('http://localhost:5000/api/sessions/add', session)
+    axios.post("/api/sessions/add", session)
     .then(res => console.log(res.data));
 
     window.location = '#';
   }
 
   deleteSession(id) {
-    axios.delete('http://localhost:5000/api/sessions/'+id)
+    axios.delete("/api/sessions/"+id)
     .then(response => { console.log(response.data)});
 
     this.setState({
