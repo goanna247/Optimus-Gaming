@@ -8,7 +8,7 @@ router.route('/add').post((req, res) => {
   const newSession = new Session({
     date,
     lengt
-  });
+  });//
 
   newSession.save()
   .then(() => res.json('Session added'))
