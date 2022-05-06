@@ -5,6 +5,7 @@ const passport = require("passport");
 const path = require('path');
 
 const users = require("./routes/api/users");
+const sessions = require("./routes/api/sessions");
 
 const app = express();
 
@@ -15,6 +16,15 @@ app.use(
   })
 );
 app.use(bodyParser.json());
+
+const cors = require('cors');
+const corsOptions ={
+    origin:'http://localhost:3000', //~BREAKPOINT this may break when i upload it to heroku. 
+    credentials:true,
+    optionSuccessStatus:200
+}
+app.use(cors(corsOptions));
+
 
 // DB Config
 const db = require("./config/keys").mongoURI;
@@ -36,6 +46,7 @@ require("./config/passport")(passport);
 
 // Routes
 app.use("/api/users", users);
+app.use('/api/sessions', sessions);
 
 // Serve static assets if we are in production 
 
