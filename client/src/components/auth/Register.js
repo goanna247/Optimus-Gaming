@@ -97,7 +97,7 @@ class Register extends Component {
                 <label htmlFor="name">First Name</label>
                 <span className="red-text">{errors.name}</span>
               </div>
-              <div className="input-field col s12">
+              {/* <div className="input-field col s12">
                 <input 
                   onChange={this.onChange}
                   value={this.state.lastName}
@@ -110,7 +110,7 @@ class Register extends Component {
                   />
                   <label htmlFor="lastName">Last Name</label>
                   <span className="red-text">{errors.lastName}</span>
-              </div>
+              </div> */}
               <div className="input-field col s12">
                 <input
                   onChange={this.onChange}
@@ -125,8 +125,8 @@ class Register extends Component {
                 <label htmlFor="email">Email</label>
                 <span className="red-text">{errors.email}</span>
               </div>
-              <div className="input-field col s12">
-                {/* Phone */}
+              {/* <div className="input-field col s12">
+
                 <input
                   onChange={this.onChange}
                   value={this.state.phone}
@@ -139,9 +139,9 @@ class Register extends Component {
                 />
                 <label htmlFor="phone">phone</label>
                 <span className="red-text">{errors.phone}</span>
-              </div>
-              <div className="input-field col s12">
-                {/* Street number */}
+              </div> */}
+              {/* <div className="input-field col s12">
+                Street number 
                 <input
                   onChange={this.onChange}
                   value={this.state.streetNumber}
@@ -154,9 +154,9 @@ class Register extends Component {
                 />
                 <label htmlFor="streetNumber">Street Number</label>
                 <span className="red-text">{errors.streetNumber}</span>
-              </div>
-              <div className="input-field col s12">
-                {/* street name */}
+              </div> */}
+              {/* <div className="input-field col s12">
+                street name
                 <input
                   onChange={this.onChange}
                   value={this.state.streetName}
@@ -169,9 +169,9 @@ class Register extends Component {
                 />
                 <label htmlFor="streetName">streetName</label>
                 <span className="red-text">{errors.streetName}</span>
-              </div>
-              <div className="input-field col s12">
-                {/* suburb */}
+              </div> */}
+              {/* <div className="input-field col s12">
+                 suburb 
                 <input
                   onChange={this.onChange}
                   value={this.state.suburb}
@@ -186,7 +186,7 @@ class Register extends Component {
                 <span className="red-text">{errors.suburb}</span>
               </div>
               <div className="input-field col s12">
-                {/* post code */}
+                 post code 
                 <input
                   onChange={this.onChange}
                   value={this.state.postCode}
@@ -199,9 +199,9 @@ class Register extends Component {
                 />
                 <label htmlFor="postCode">postCode</label>
                 <span className="red-text">{errors.postCode}</span>
-              </div>
-              <div className="input-field col s12">
-                {/* age  */}
+              </div> */}
+              {/* <div className="input-field col s12">
+                {/* age  
                 <input
                   onChange={this.onChange}
                   value={this.state.age}
@@ -214,7 +214,7 @@ class Register extends Component {
                 />
                 <label htmlFor="age">age</label>
                 <span className="red-text">{errors.age}</span>
-              </div>
+              </div> */}
               <div className="input-field col s12">
                 <input
                   onChange={this.onChange}
